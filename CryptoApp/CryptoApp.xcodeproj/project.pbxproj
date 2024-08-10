@@ -11,6 +11,9 @@
 		850225AA2C64D322004DA7E6 /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850225A92C64D322004DA7E6 /* CircleButtonView.swift */; };
 		850225AC2C64DCD6004DA7E6 /* CircleButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850225AB2C64DCD6004DA7E6 /* CircleButtonAnimationView.swift */; };
 		850225AF2C64FA68004DA7E6 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850225AE2C64FA68004DA7E6 /* CoinModel.swift */; };
+		850225B12C65373C004DA7E6 /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850225B02C65373C004DA7E6 /* CoinRowView.swift */; };
+		850225B32C65422B004DA7E6 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850225B22C65422B004DA7E6 /* PreviewProvider.swift */; };
+		850225B52C6601F9004DA7E6 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850225B42C6601F9004DA7E6 /* Double.swift */; };
 		85DAA9E22C648EF500506FAE /* CryptoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DAA9E12C648EF500506FAE /* CryptoAppApp.swift */; };
 		85DAA9E42C648EF500506FAE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DAA9E32C648EF500506FAE /* ContentView.swift */; };
 		85DAA9E62C648EF700506FAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85DAA9E52C648EF700506FAE /* Assets.xcassets */; };
@@ -23,6 +26,9 @@
 		850225A92C64D322004DA7E6 /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
 		850225AB2C64DCD6004DA7E6 /* CircleButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimationView.swift; sourceTree = "<group>"; };
 		850225AE2C64FA68004DA7E6 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
+		850225B02C65373C004DA7E6 /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
+		850225B22C65422B004DA7E6 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
+		850225B42C6601F9004DA7E6 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		85DAA9DE2C648EF500506FAE /* CryptoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85DAA9E12C648EF500506FAE /* CryptoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoAppApp.swift; sourceTree = "<group>"; };
 		85DAA9E32C648EF500506FAE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				850225A52C64B76E004DA7E6 /* HomeView.swift */,
+				850225B02C65373C004DA7E6 /* CoinRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -142,6 +149,8 @@
 			isa = PBXGroup;
 			children = (
 				85DAA9F02C64BC8600506FAE /* Color.swift */,
+				850225B22C65422B004DA7E6 /* PreviewProvider.swift */,
+				850225B42C6601F9004DA7E6 /* Double.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -216,12 +225,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				850225B12C65373C004DA7E6 /* CoinRowView.swift in Sources */,
 				85DAA9E42C648EF500506FAE /* ContentView.swift in Sources */,
 				850225A62C64B76E004DA7E6 /* HomeView.swift in Sources */,
 				85DAA9E22C648EF500506FAE /* CryptoAppApp.swift in Sources */,
 				850225AA2C64D322004DA7E6 /* CircleButtonView.swift in Sources */,
 				85DAA9F12C64BC8600506FAE /* Color.swift in Sources */,
 				850225AC2C64DCD6004DA7E6 /* CircleButtonAnimationView.swift in Sources */,
+				850225B32C65422B004DA7E6 /* PreviewProvider.swift in Sources */,
+				850225B52C6601F9004DA7E6 /* Double.swift in Sources */,
 				850225AF2C64FA68004DA7E6 /* CoinModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
