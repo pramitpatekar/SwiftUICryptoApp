@@ -23,6 +23,8 @@ struct HomeView: View {
             VStack {
                 homeHeader
                 
+                SearchBarView(searchText: $vm.searchText)
+                
                 columnTitles
                 
                 if !showPortfolio {
@@ -120,7 +122,7 @@ extension HomeView {
         }
         .font(.headline.bold())
         .foregroundColor(Color.theme.secondaryText)
-        .padding(.horizontal)
+        .padding()
     }
     
 }
