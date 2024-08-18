@@ -36,6 +36,8 @@
 		85DAA9E62C648EF700506FAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85DAA9E52C648EF700506FAE /* Assets.xcassets */; };
 		85DAA9E92C648EF700506FAE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85DAA9E82C648EF700506FAE /* Preview Assets.xcassets */; };
 		85DAA9F12C64BC8600506FAE /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DAA9F02C64BC8600506FAE /* Color.swift */; };
+		85DDF5832C6F923900E55CD5 /* PortfolioContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 85DDF5812C6F923900E55CD5 /* PortfolioContainer.xcdatamodeld */; };
+		85DDF5852C6F937900E55CD5 /* PortfolioDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DDF5842C6F937900E55CD5 /* PortfolioDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +71,8 @@
 		85DAA9E52C648EF700506FAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85DAA9E82C648EF700506FAE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		85DAA9F02C64BC8600506FAE /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		85DDF5822C6F923900E55CD5 /* PortfolioContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PortfolioContainer.xcdatamodel; sourceTree = "<group>"; };
+		85DDF5842C6F937900E55CD5 /* PortfolioDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioDataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +150,7 @@
 				850225AE2C64FA68004DA7E6 /* CoinModel.swift */,
 				857FC6A52C6BE9BB003AD14C /* StatisticsModel.swift */,
 				8582D8A22C6C9A7900CCAAEF /* MarketDataModel.swift */,
+				85DDF5812C6F923900E55CD5 /* PortfolioContainer.xcdatamodeld */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -156,6 +161,7 @@
 				855BFECB2C689C0B00A28378 /* CoinDataService.swift */,
 				855BFED42C6A39DE00A28378 /* CoinImageService.swift */,
 				8582D8A42C6CC03200CCAAEF /* MarketDataService.swift */,
+				85DDF5842C6F937900E55CD5 /* PortfolioDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -300,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85DDF5832C6F923900E55CD5 /* PortfolioContainer.xcdatamodeld in Sources */,
 				855BFECC2C689C0B00A28378 /* CoinDataService.swift in Sources */,
 				850225B12C65373C004DA7E6 /* CoinRowView.swift in Sources */,
 				850225B72C67D1E1004DA7E6 /* HomeViewModel.swift in Sources */,
@@ -327,6 +334,7 @@
 				850225B52C6601F9004DA7E6 /* Double.swift in Sources */,
 				855BFED52C6A39DE00A28378 /* CoinImageService.swift in Sources */,
 				850225AF2C64FA68004DA7E6 /* CoinModel.swift in Sources */,
+				85DDF5852C6F937900E55CD5 /* PortfolioDataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,6 +542,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		85DDF5812C6F923900E55CD5 /* PortfolioContainer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				85DDF5822C6F923900E55CD5 /* PortfolioContainer.xcdatamodel */,
+			);
+			currentVersion = 85DDF5822C6F923900E55CD5 /* PortfolioContainer.xcdatamodel */;
+			path = PortfolioContainer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 85DAA9D62C648EF500506FAE /* Project object */;
 }
