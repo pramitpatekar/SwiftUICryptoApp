@@ -124,17 +124,28 @@ extension HomeView {
     
     private var columnTitles: some View {
         HStack{
-            Text("Coin")
+            Text("Coins")
+                .padding(.leading, 5)
             Spacer()
             if showPortfolio {
                 Text("Holdings")
             }
             Text("Price")
                 .frame(width: UIScreen.main.bounds.width / 3, alignment: .trailing)
+            
+            Button(action: {
+                withAnimation(.linear(duration: 0.5)) {
+                    vm.reloadData()
+                }
+            }, label: {
+                Image(systemName: "goforward")
+            })
+            .rotationEffect(Angle(degrees: vm.isLoading ? 360 : 0), anchor: .center)
+            
         }
         .font(.headline.bold())
         .foregroundColor(Color.theme.secondaryText)
-        .padding()
+        .padding(.horizontal)
     }
     
 }

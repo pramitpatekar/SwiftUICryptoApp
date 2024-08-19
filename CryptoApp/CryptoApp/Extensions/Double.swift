@@ -21,8 +21,8 @@ extension Double {
         formatter.usesGroupingSeparator = true
         formatter.numberStyle = .currency
 //        formatter.locale = .current               //Default currency Value
-//        formatter.currencyCode = "usd"            //used to change the currency (override)
-//        formatter.currencySymbol = "$"            //used to change the currency symbol (override)
+        formatter.currencyCode = "usd"            //used to change the currency (override)
+        formatter.currencySymbol = "$"            //used to change the currency symbol (override)
         
         formatter.minimumFractionDigits = 2         //depending on the number this will format between 2 and 6 decimal places
         formatter.maximumFractionDigits = 2
@@ -62,8 +62,8 @@ extension Double {
         formatter.usesGroupingSeparator = true
         formatter.numberStyle = .currency
 //        formatter.locale = .current               //Default currency Value
-//        formatter.currencyCode = "usd"            //used to change the currency (override)
-//        formatter.currencySymbol = "$"            //used to change the currency symbol (override)
+        formatter.currencyCode = "usd"            //used to change the currency (override)
+        formatter.currencySymbol = "$"            //used to change the currency symbol (override)
         
         formatter.minimumFractionDigits = 2         //depending on the number this will format between 2 and 6 decimal places
         formatter.maximumFractionDigits = 6

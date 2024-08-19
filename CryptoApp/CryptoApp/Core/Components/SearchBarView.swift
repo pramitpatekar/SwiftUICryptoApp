@@ -37,15 +37,15 @@ struct SearchBarView: View {
                 )
         }
         .font(.headline)
-        .padding()
-        .padding(.leading)
+        .padding(7)
+        .padding(.leading, 5)
         .background(
             RoundedRectangle(cornerRadius: 25.0)
                 .fill(Color.theme.background)
             //  .padding(.horizontal)
                 .shadow(color: Color.theme.accent.opacity(0.2), radius: 10, x: 0.0, y: 0.0)
         )
-        .padding()
+        .padding(5)
     }
 }
 
