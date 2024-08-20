@@ -39,6 +39,7 @@
 		85DAA9F12C64BC8600506FAE /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DAA9F02C64BC8600506FAE /* Color.swift */; };
 		85DDF5832C6F923900E55CD5 /* PortfolioContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 85DDF5812C6F923900E55CD5 /* PortfolioContainer.xcdatamodeld */; };
 		85DDF5852C6F937900E55CD5 /* PortfolioDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DDF5842C6F937900E55CD5 /* PortfolioDataService.swift */; };
+		85F897F62C73A5EE0003C6BB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F897F52C73A5EE0003C6BB /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		85DAA9F02C64BC8600506FAE /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		85DDF5822C6F923900E55CD5 /* PortfolioContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PortfolioContainer.xcdatamodel; sourceTree = "<group>"; };
 		85DDF5842C6F937900E55CD5 /* PortfolioDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioDataService.swift; sourceTree = "<group>"; };
+		85F897F52C73A5EE0003C6BB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			children = (
 				850225A72C64D2E0004DA7E6 /* Components */,
 				850225A22C64B739004DA7E6 /* Home */,
+				85F897F22C73A5880003C6BB /* Detail */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -239,6 +242,30 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		85F897F22C73A5880003C6BB /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				85F897F42C73A5C10003C6BB /* Views */,
+				85F897F32C73A5B70003C6BB /* ViewModels */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		85F897F32C73A5B70003C6BB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		85F897F42C73A5C10003C6BB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				85F897F52C73A5EE0003C6BB /* DetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -325,6 +352,7 @@
 				853D47552C6B8AA300774B2B /* UIApplication.swift in Sources */,
 				857FC6A82C6C6B01003AD14C /* StatisticsView.swift in Sources */,
 				850225AA2C64D322004DA7E6 /* CircleButtonView.swift in Sources */,
+				85F897F62C73A5EE0003C6BB /* DetailView.swift in Sources */,
 				8541039D2C72FE9A0029984F /* HapticManager.swift in Sources */,
 				85DAA9F12C64BC8600506FAE /* Color.swift in Sources */,
 				855F5E812C6B6C61009E7526 /* SearchBarView.swift in Sources */,

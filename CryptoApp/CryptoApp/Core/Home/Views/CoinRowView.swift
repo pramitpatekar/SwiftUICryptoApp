@@ -22,6 +22,9 @@ struct CoinRowView: View {
             rightColumn
         }
         .font(.subheadline)
+        .background(
+            Color.theme.background.opacity(0.001)             // to make the whole row clickable because due to spacer the middle empty space is not clickable
+        )
     }
 }
 
