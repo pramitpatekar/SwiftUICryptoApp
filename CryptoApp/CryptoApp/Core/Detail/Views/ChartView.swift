@@ -53,14 +53,13 @@ struct ChartView: View {
         .foregroundColor(Color.theme.secondaryText)
         .onAppear {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-                withAnimation(.linear(duration: 3.0)) {
+                withAnimation(.linear(duration: 2.0)) {
                     percentage = 1.0
                 }
             }
         }
     }
 }
-
 
 
 
