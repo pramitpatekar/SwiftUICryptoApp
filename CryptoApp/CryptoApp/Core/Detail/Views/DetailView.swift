@@ -49,37 +49,39 @@ struct DetailView: View {
     
     var body: some View {
         ScrollView {
-            VStack(spacing: 20) {
+            
+            VStack {
+                ChartView(coin: vm.coin)
+                    .padding(.vertical)
                 
-                Text("\(vm.coin.name)")
-                    .font(.title)
-                    .bold()
-                    .foregroundColor(Color.theme.accent)
-                    .frame(maxWidth: .infinity, alignment: .topLeading)
-                
-                Text("")
-                    .frame(height: 150)
-                
-                overviewTitle
-                
-                Divider().background(Color.theme.secondaryText)
-                
-                overviewGrid
-                
-                
-                additionalTitle
-                
-                Divider().background(Color.theme.secondaryText)
-                
-                additionalGrid
-                
+                VStack(spacing: 20) {
+                    
+                    overviewTitle
+                    
+                    Divider().background(Color.theme.secondaryText)
+                    
+                    overviewGrid
+                    
+                    
+                    additionalTitle
+                    
+                    Divider().background(Color.theme.secondaryText)
+                    
+                    additionalGrid
+                    
+                }
+                .padding(.leading, 15)
             }
-            .navigationTitle(vm.coin.name)
-            .padding(.leading, 15)
+            
         }
-        
+        .navigationTitle(vm.coin.name)
+        .navigationBarTitleDisplayMode(.large)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                navigationBarTrailingItems
+            }
+        }
     }
-
 }
 
 
@@ -94,6 +96,19 @@ struct DetailView_Previews: PreviewProvider {
 
 extension DetailView {
     
+    
+    private var navigationBarTrailingItems: some View{
+        HStack {
+            Text(vm.coin.symbol.uppercased())
+                .font(.headline)
+            .foregroundColor(Color.theme.secondaryText)
+            
+            CoinImageView(coin: vm.coin)
+                .frame(width: 25, height: 25)
+        }
+    }
+    
+    
     private var overviewTitle: some View {
         Text("Overview")
             .font(.title)
@@ -101,6 +116,7 @@ extension DetailView {
             .foregroundColor(Color.theme.accent)
             .frame(maxWidth: .infinity, alignment: .leading)
     }
+    
     
     private var additionalTitle: some View {
         Text("Additional Details")
@@ -125,6 +141,7 @@ extension DetailView {
         )
     }
     
+    
     private var additionalGrid: some View {
         LazyVGrid(
             columns: columns,
@@ -138,5 +155,4 @@ extension DetailView {
             }
         )
     }
-    
 }
