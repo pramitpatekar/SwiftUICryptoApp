@@ -152,6 +152,7 @@ extension HomeView {
                         segue(coin: coin)
                     }
             }
+            .onDelete(perform: vm.deleteItem)
         }
         .listStyle(PlainListStyle())
     }
