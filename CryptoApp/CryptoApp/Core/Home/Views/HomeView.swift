@@ -19,6 +19,7 @@ struct HomeView: View {
     @State private var showDetailView: Bool = false
     
     
+    
     var body: some View {
         ZStack {
             
@@ -46,8 +47,14 @@ struct HomeView: View {
                     
                 }
                 if showPortfolio {
-                    portfolioCoinsList
-                        .transition(.move(edge: .trailing))
+                    ZStack(alignment: .top) {
+                        if vm.portfolioCoins.isEmpty && vm.searchText.isEmpty{
+                            portfolioEmptyText
+                        } else {
+                            portfolioCoinsList
+                        }
+                    }
+                    .transition(.move(edge: .trailing))
                 }
                 
                 Spacer(minLength: 0)
@@ -149,6 +156,15 @@ extension HomeView {
         .listStyle(PlainListStyle())
     }
     
+    
+    private var portfolioEmptyText: some View {
+        Text("You haven't added any coins to your portfolioyet. Click the + button to get started... ")
+            .font(.callout)
+            .foregroundColor(Color.theme.accent)
+            .fontWeight(.medium)
+            .multilineTextAlignment(.center)
+            .padding(50)
+    }
     
     
     private func segue(coin: CoinModel) {
