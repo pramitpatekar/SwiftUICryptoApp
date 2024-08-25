@@ -155,6 +155,7 @@ extension HomeView {
                     .listRowBackground(Color.clear)
             }
             .onDelete(perform: vm.deleteCoin)
+
         }
         .listStyle(PlainListStyle())
     }

@@ -52,7 +52,7 @@ class PortfolioDataService {
     
     //PRIVATE
     
-    private func getPortfolio() {
+    func getPortfolio() {
         let request = NSFetchRequest<PortfolioEntity>(entityName: entityName)
         do {
             savedEntities = try container.viewContext.fetch(request)
@@ -77,11 +77,11 @@ class PortfolioDataService {
     }
     
     
-    private func delete(entity: PortfolioEntity) {
+    func delete(entity: PortfolioEntity) {
         container.viewContext.delete(entity)
         applyChanges()
     }
-    
+
     
     private func save() {
         do {

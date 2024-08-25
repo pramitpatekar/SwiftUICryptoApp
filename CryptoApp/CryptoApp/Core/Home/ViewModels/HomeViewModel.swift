@@ -95,10 +95,22 @@ class HomeViewModel: ObservableObject {
         HapticManager.notification(type: .success)
     }
     
+
     
-    func deleteCoin(indexSet: IndexSet) {
-        portfolioCoins.remove(atOffsets: indexSet)
-    }
+    func deleteCoin(at offsets: IndexSet) {
+            // Ensure there is at least one index
+            guard let index = offsets.first else { return }
+            
+            // Get the coin to delete
+            let coin = portfolioCoins[index]
+            
+            // Find the corresponding Core Data entity
+            if let entity = portfolioDataService.savedEntities.first(where: { $0.coinID == coin.id }) {
+                // Delete the entity from Core Data
+                portfolioDataService.delete(entity: entity)
+            }
+            
+        }
     
     
     
