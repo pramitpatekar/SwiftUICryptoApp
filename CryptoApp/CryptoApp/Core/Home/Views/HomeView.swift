@@ -134,6 +134,7 @@ extension HomeView {
                     .onTapGesture {
                         segue(coin: coin)
                     }
+                    .listRowBackground(Color.clear)
             }
         }
         .listStyle(PlainListStyle())
@@ -151,8 +152,9 @@ extension HomeView {
                     .onTapGesture {
                         segue(coin: coin)
                     }
+                    .listRowBackground(Color.clear)
             }
-            .onDelete(perform: vm.deleteItem)
+            .onDelete(perform: vm.deleteCoin)
         }
         .listStyle(PlainListStyle())
     }

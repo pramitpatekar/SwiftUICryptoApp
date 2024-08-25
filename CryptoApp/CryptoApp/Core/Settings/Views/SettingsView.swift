@@ -18,11 +18,24 @@ struct SettingsView: View {
     
     var body: some View {
         NavigationView {
-            List {
-                swiftfulThinkingSection
-                coinGeckoSection
-                developerSection
-                applicationSection
+            
+            ZStack {
+                //background
+                Color.theme.background         //not working
+                    .ignoresSafeArea()
+                
+                //content
+                List {
+                    swiftfulThinkingSection
+                        .listRowBackground(Color.theme.background)
+                    coinGeckoSection
+                        .listRowBackground(Color.theme.background)
+                    developerSection
+                        .listRowBackground(Color.theme.background)
+                    applicationSection
+                        .listRowBackground(Color.theme.background)
+                }
+                
             }
             .font(.headline)
             .accentColor(.blue)

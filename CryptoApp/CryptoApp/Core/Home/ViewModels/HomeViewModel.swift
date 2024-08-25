@@ -96,14 +96,14 @@ class HomeViewModel: ObservableObject {
     }
     
     
-    func deleteItem(indexSet: IndexSet) {
+    func deleteCoin(indexSet: IndexSet) {
         portfolioCoins.remove(atOffsets: indexSet)
     }
     
     
     
     private func filterAndSortCoins(text: String, coins: [CoinModel], sort: SortOption) -> [CoinModel] {
-        var filteredCoins = filterCoins(text: text, coins: coins)
+        let filteredCoins = filterCoins(text: text, coins: coins)
         let sortedCoins = sortCoins(sort: sort, coins: filteredCoins)
         return sortedCoins
     }

@@ -15,9 +15,14 @@ struct CryptoAppApp: App {
     @State private var showLaunchView: Bool = true
     
     init() {
+        
+        // this is used to override the color scheme
+        
         UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor : UIColor(Color.theme.accent)]
         UINavigationBar.appearance().titleTextAttributes = [.foregroundColor : UIColor(Color.theme.accent)]
-
+        UITableView.appearance().backgroundColor = UIColor.clear
+        UINavigationBar.appearance().tintColor = UIColor(Color.theme.accent)
+        //UINavigationBar.appearance().backgroundColor = UIColor(Color.theme.background)   // this is used to override the color scheme of the settings view
     }
     
     var body: some Scene {
